@@ -7,6 +7,7 @@
 - Sandeep Reddy Banda
 - Sowmya Cheruku
 - Vineela Reddy Karnatakam
+
 **Dataset:** IBM Telco Customer Churn (7,043 customers × 21 attributes)
 
 This repository contains the first deliverable of a four-part data mining project. The goal here is to select a
@@ -18,18 +19,17 @@ clean it, and explore it to produce insights that guide the modeling work in Del
 ## Repository Contents
 
 ```
-MSCS_634_ProjectDeliverable_1/
+MSCS_634_Project_Deliverable_1/
 ├── Deliverable1_Data_Cleaning_EDA.ipynb   # Main notebook: loading, cleaning, EDA, insights (with outputs)
 ├── README.md                              # This file
 ├── requirements.txt                       # Python packages needed to run the notebook
-├── data/
-│   ├── Telco-Customer-Churn.csv           # Raw dataset (unchanged)
-│   └── telco_churn_cleaned.csv            # Cleaned dataset produced by the notebook (input for Deliverables 2-4)
-└── figures/                               # All charts exported by the notebook
+├── Telco-Customer-Churn.csv               # Raw dataset (unchanged)
+├── telco_churn_cleaned.csv                # Cleaned dataset produced by the notebook (input for Deliverables 2-4)
+└── Images/                                # All charts exported by the notebook
 ```
 
 **To run:** `pip install -r requirements.txt`, then open the notebook in Jupyter and choose *Run All*. The notebook
-reads `data/Telco-Customer-Churn.csv`; if the file is missing it downloads IBM's public copy automatically.
+reads `Telco-Customer-Churn.csv`; if the file is missing it downloads IBM's public copy automatically.
 
 ---
 
@@ -69,13 +69,13 @@ project deliverables:
 | 8 | Helper columns for analysis | Added `Churn_flag` (0/1), `tenure_group`, `NumServices` | Lets churn *rates* be averaged and service bundling be analyzed |
 
 **Result:** 7,043 rows × 24 columns, **0 missing values**, every categorical column validated against its allowed
-values. Saved as `data/telco_churn_cleaned.csv`.
+values. Saved as `telco_churn_cleaned.csv`.
 
 ---
 
 ## Exploratory Data Analysis
 
-The notebook includes nine labeled figures (all saved in `figures/`):
+The notebook includes nine labeled figures (all saved in `Images/`):
 
 1. Target class balance
 2. Numeric distributions by churn status (histograms)
@@ -87,9 +87,9 @@ The notebook includes nine labeled figures (all saved in `figures/`):
 8. Interaction heatmaps (contract × tenure, contract × internet service)
 9. Churn rate by number of services subscribed
 
-![Churn rate by category](figures/04_churn_rate_by_category.png)
+![Churn rate by category](Images/04_churn_rate_by_category.png)
 
-![Interaction heatmaps](figures/08_interaction_heatmaps.png)
+![Interaction heatmaps](Images/08_interaction_heatmaps.png)
 
 ---
 
