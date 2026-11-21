@@ -1,7 +1,12 @@
 # MSCS 634 – Project Deliverable 1: Data Collection, Cleaning, and Exploration
 
 **Project:** Advanced Data Mining for Data-Driven Insights and Predictive Modeling
-**Author:** [Your Name]
+
+**Authors:**
+- Pranavi Balakulla
+- Sandeep Reddy Banda
+- Sowmya Cheruku
+- Vineela Reddy Karnatakam
 **Dataset:** IBM Telco Customer Churn (7,043 customers × 21 attributes)
 
 This repository contains the first deliverable of a four-part data mining project. The goal here is to select a
